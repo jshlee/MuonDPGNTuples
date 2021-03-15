@@ -355,7 +355,7 @@ void MuNtupleGEMMuonFiller::fill_new(const edm::Event & ev, const edm::EventSetu
                       
                       for (const GEMStation* station : gem_region->stations())
                         {
-			  std::cout << "station" << std::endl;
+			  //std::cout << "station" << std::endl;
                           for (const GEMSuperChamber* super_chamber : station->superChambers())
                             {
                               for (const GEMChamber* chamber : super_chamber->chambers())
@@ -375,7 +375,7 @@ void MuNtupleGEMMuonFiller::fill_new(const edm::Event & ev, const edm::EventSetu
                                   const GEMEtaPartition* eta_partition = findEtaPartition(chamber, dest_global_pos);
                                   if (eta_partition == nullptr)
                                     {
-				      std::cout << "failed to find GEMEtaPartition" << std::endl; 
+				      //std::cout << "failed to find GEMEtaPartition" << std::endl; 
                                       continue;
                                     }
 

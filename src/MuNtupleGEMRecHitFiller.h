@@ -44,6 +44,7 @@ class MuNtupleGEMRecHitFiller : public MuNtupleBaseFiller
   std::vector<int> m_rechit_bx;
 
   std::vector<int> m_rechit_region;
+  std::vector<int> m_rechit_station;
   std::vector<int> m_rechit_chamber;
   std::vector<int> m_rechit_layer;
   std::vector<int> m_rechit_etaPartition;

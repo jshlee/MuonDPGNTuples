@@ -24,6 +24,7 @@ muNtupleProducer = cms.EDAnalyzer("MuNtupleProducer",
                                                                             doWirePropCorrection = cms.bool(False),
                                                                             doT0Correction = cms.bool(True),
                                                                             tTrigLabel = cms.string(''),
+                                                                            t0Label = cms.string(''),
                                                                             debug = cms.untracked.bool(False)
                                                                         )
 )

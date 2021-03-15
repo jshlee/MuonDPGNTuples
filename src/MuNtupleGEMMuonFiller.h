@@ -82,7 +82,7 @@ class MuNtupleGEMMuonFiller : public MuNtupleTrackBaseFiller
   std::vector<bool>  m_isCSC;
   std::vector<bool> m_isME11;
   
-  std::vector<bool> m_propagatedisME11;
+  std::vector<bool> m_propagated_isME11;
 
   std::vector<bool>  m_isLoose;  // Loose muon ID
   std::vector<bool>  m_isMedium; // Medium muon ID
@@ -104,7 +104,9 @@ class MuNtupleGEMMuonFiller : public MuNtupleTrackBaseFiller
   std::vector<float> m_propagated_charge;
 
   std::vector<float> m_propagatedLoc_x;
+  std::vector<float> m_propagatedLoc_errX;
   std::vector<float> m_propagatedLoc_y;
+  std::vector<float> m_propagatedLoc_errY;
   std::vector<float> m_propagatedLoc_z;
   std::vector<float> m_propagatedLoc_r;
   std::vector<float> m_propagatedLoc_phi;
